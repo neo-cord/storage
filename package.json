@@ -1,0 +1,34 @@
+{
+  "name": "@neocord/storage",
+  "version": "1.0.0",
+  "description": "Storage classes for NeoCord.",
+  "author": "MeLike2D <gino@melike2d.me>",
+  "homepage": "https://github.com/neo-cord/storage#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && tsc --removeComments",
+    "build:types": "tsc -d",
+    "lint": "eslint . --ext .ts",
+    "bundle:types": "dts-bundle --name @neocord/storage --main ./dist --removeSource --outputAsModuleFolder --baseDir ./dist --out ../typings/index.d.ts"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neo-cord/storage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/neo-cord/storage/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^14.6.2",
+    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "@typescript-eslint/parser": "^4.0.1",
+    "eslint": "^7.8.0",
+    "typescript": "^4.0.2"
+  }
+}
